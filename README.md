@@ -1,17 +1,15 @@
 # Mini Curso de Python - Rocketseat
 
-Este repositório contém o material e os exemplos do Mini Curso de Python oferecido pela Rocketseat. O curso tem como objetivo ensinar os fundamentos da linguagem Python, incluindo conceitos de programação, manipulação de dados e criação de aplicações simples.
+Este repositório contém o material e os exemplos do Mini Curso de Python oferecido pela Rocketseat. O curso tem como objetivo ensinar os fundamentos da linguagem Python, incluindo conceitos de programação, manipulação de dados e criação de aplicações simples através do desenvolvimento de uma API que simula um sistema e-commerce.
 
 ## Conteúdo
 
-- Introdução ao Python
-- Estruturas de Controle
-- Funções
-- Manipulação de Dados
-- Trabalhando com Bibliotecas
-- Introdução ao Flask
-- Criação de APIs
-- Trabalhando com Banco de Dados
+- Criação de rotas
+- Integração ao banco de dados
+- Autenticação de usuários
+- Listagem de produtos
+- Inserção dos itens ao carrinho de comprar
+- Checkout dos itens
 
 ## Tecnologias Utilizadas
 
@@ -25,7 +23,8 @@ Este repositório contém o material e os exemplos do Mini Curso de Python ofere
 
 ### Pré-requisitos
 
-Certifique-se de ter o Python 3.x instalado em sua máquina. Você pode baixar o Python [aqui](https://www.python.org/downloads/).
+É necessário de ter o Python 3.x instalado em sua máquina. Você pode baixar o Python [aqui](https://www.python.org/downloads/).
+Além disso, foi utilizado o Postman. Você também pode fazer o download no [link](https://www.postman.com/downloads/).
 
 ### Instalação
 
