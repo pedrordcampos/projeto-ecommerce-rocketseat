@@ -2,7 +2,6 @@ from flask import Flask
 from config import Config
 from db import db
 from route import init_routes
-from models import Product 
 
 # Inicializa a aplicação
 app = Flask(__name__)
