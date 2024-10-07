@@ -41,7 +41,7 @@ Certifique-se de ter o Python 3.x instalado em sua máquina. Você pode baixar o
    ```bash
    venv\Scripts\activate
 5. Instale as dependências
-
+   ```bash
    pip install -r requirements.txt
 
 6. Para rodar a aplicação
@@ -49,9 +49,9 @@ Certifique-se de ter o Python 3.x instalado em sua máquina. Você pode baixar o
    python app.py
 
 ## Contato
-Pedro Ricardo de Campos
-pedro.rdcampos@hotmail.com
-https://www.linkedin.com/in/pedro-ricardo-de-campos/
+### Pedro Ricardo de Campos
+### pedro.rdcampos@hotmail.com
+### https://www.linkedin.com/in/pedro-ricardo-de-campos/
 
 
 
