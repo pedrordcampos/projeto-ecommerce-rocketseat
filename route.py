@@ -16,6 +16,6 @@ def init_routes(app):
     
     @app.route('/api/products/delete/<int:product_id>', methods=["DELETE"])
     def delete_product(product_id):
-        # Chama o método do controlador para adicionar o produto
+        # Chama o método do controlador para remover o produto
         return ProductController.remove_product(product_id)
         
