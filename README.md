@@ -22,9 +22,8 @@ Este repositório contém o material e os exemplos do Mini Curso de Python ofere
 ## Como Executar
 
 ### Pré-requisitos
-
-É necessário de ter o Python 3.x instalado em sua máquina. Você pode baixar o Python [aqui](https://www.python.org/downloads/).
-Além disso, foi utilizado o Postman. Você também pode fazer o download no [link](https://www.postman.com/downloads/).
+Python -> Você pode fazer o download [aqui](https://www.python.org/downloads/).
+Postman -> Você também pode fazer o download [aqui](https://www.postman.com/downloads/).
 
 ### Instalação
 
