@@ -22,8 +22,8 @@ Este repositório contém o material e os exemplos do Mini Curso de Python ofere
 ## Como Executar
 
 ### Pré-requisitos
-Python -> Você pode fazer o download [aqui](https://www.python.org/downloads/).
-Postman -> Você também pode fazer o download [aqui](https://www.postman.com/downloads/).
+#### Python - Você pode fazer o download [aqui](https://www.python.org/downloads/).
+#### Postman - Você também pode fazer o download [aqui](https://www.postman.com/downloads/).
 
 ### Instalação
 
