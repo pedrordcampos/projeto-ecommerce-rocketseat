@@ -32,7 +32,11 @@ Certifique-se de ter o Python 3.x instalado em sua máquina. Você pode baixar o
 1. Clone este repositório:
    ```bash
    git clone https://github.com/seu-usuario/mini-curso-python-rocketseat.git
+   
 2. Navegue até o diretório do projeto
+   ```bash
+   cd mini-curso-python-rocketseat
+
 3. Crie um ambiente virtual
     ```bash
    python -m venv venv
@@ -48,10 +52,10 @@ Certifique-se de ter o Python 3.x instalado em sua máquina. Você pode baixar o
    ```bash
    python app.py
 
-### Contato
-#### Pedro Ricardo de Campos
-#### pedro.rdcampos@hotmail.com
-#### https://www.linkedin.com/in/pedro-ricardo-de-campos/
+### Dúvidas? Entre em contato
+#### Pedro Ricardo de Campos - Whatspp (15) 9952-3275
+#### E-mail: pedro.rdcampos@hotmail.com
+#### Linkedin: https://www.linkedin.com/in/pedro-ricardo-de-campos/
 
 
 
