@@ -29,7 +29,7 @@ Este repositório contém o material e os exemplos do Mini Curso de Python ofere
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/mini-curso-python-rocketseat.git
+     https://github.com/pedrordcampos/Mini-Curso-de-Python---Rocketseat.git
    
 2. Navegue até o diretório do projeto
    ```bash
