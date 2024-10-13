@@ -8,7 +8,6 @@ schemes:
   - http
 
 paths:
-
   /login:
     post:
       summary: Log in
@@ -28,9 +27,7 @@ paths:
           headers: 
             Set-Cookie:
               type: string
-
           description: Logged in successfully
-
         401:
           description: Unauthorized. Invalid credentials
 
@@ -42,7 +39,83 @@ paths:
           description: Logout successfully
         401:
           description: Unauthorized. Invalid credentials
-  
+
+  /api/users:
+    get:
+      summary: List all users
+      responses:
+        200:
+          description: Returns a list of users
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/User'
+    post:
+      summary: Add a new user
+      parameters:
+        - name: body
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/User'
+      responses:
+        201:
+          description: User added successfully
+        400:
+          description: Failed to add the user
+
+  /api/users/{user_id}:
+    get:
+      summary: Get user details by ID
+      parameters:
+        - name: user_id
+          in: path
+          type: integer
+          required: true
+          description: User ID to retrieve details
+      responses:
+        200:
+          description: Returns user details
+          schema:
+            $ref: '#/definitions/User'
+        404:
+          description: Not Found. User not available.
+
+    put:
+      summary: Update user details by ID
+      parameters:
+        - name: user_id
+          in: path
+          type: integer
+          required: true
+          description: User ID to update
+        - name: body
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/User'
+      responses:
+        200:
+          description: User updated successfully
+        404:
+          description: Not Found. User not available
+        400:
+          description: Failed to update the user
+
+    delete:
+      summary: Delete a user by ID
+      parameters:
+        - name: user_id
+          in: path
+          type: integer
+          required: true
+          description: User ID to delete
+      responses:
+        200:
+          description: User deleted successfully
+        404:
+          description: Not Found. User not available
+
   /api/products:
     get:
       summary: Get a list of products
@@ -206,10 +279,11 @@ definitions:
         type: string
       password:
         type: string
-      cart:
-        type: array
-        items:
-          $ref: '#/definitions/CartItem'
+      email:
+        type: string
+      created_at:
+        type: string
+        format: date-time
 
   Product:
     type: object
