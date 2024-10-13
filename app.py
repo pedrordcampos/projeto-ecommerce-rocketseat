@@ -4,6 +4,7 @@ from config import Config
 from database.db import db
 from flask_login import LoginManager
 from models.user_model import User
+from models.cart_model import CartItem  
 from routes.route import init_routes
 
 # Inicializa a aplicação Flask
@@ -39,5 +40,6 @@ init_routes(app)
 # Função principal para rodar a aplicação
 if __name__ == "__main__":
     with app.app_context():
-        db.create_all()  # Cria as tabelas no banco de dados, se ainda não existirem
+        db.create_all()  
+        db.session.commit()
     app.run(debug=True)

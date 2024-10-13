@@ -7,6 +7,7 @@ class User(db.Model, UserMixin):
     username = db.Column(db.String(80), nullable=False, unique=True)
     password = db.Column(db.String(128), nullable=False)
     email = db.Column(db.String(120), nullable=False, unique=True)
+    cart = db.relationship('CartItem', backref="user", lazy=True)
     created_at = db.Column(db.DateTime, nullable=False, default=db.func.current_timestamp())
 
     def set_password(self, password):
