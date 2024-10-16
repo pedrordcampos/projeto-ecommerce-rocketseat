@@ -1,8 +1,5 @@
 # Mini Curso de Python - Rocketseat
 
-# ![Certificado](certificado.png)
-
-
 Este repositório contém o material e os exemplos do Mini Curso de Python oferecido pela Rocketseat. O curso tem como objetivo ensinar os fundamentos da linguagem Python, incluindo conceitos de programação, manipulação de dados e criação de aplicações simples através do desenvolvimento de uma API que simula um sistema e-commerce.
 
 ## Conteúdo
@@ -58,7 +55,7 @@ Este repositório contém o material e os exemplos do Mini Curso de Python ofere
 #### E-mail: pedro.rdcampos@hotmail.com
 #### Linkedin: https://www.linkedin.com/in/pedro-ricardo-de-campos/
 
-
+# ![Certificado](certificado.png)
 
 
 
