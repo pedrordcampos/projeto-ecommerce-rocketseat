@@ -5,7 +5,7 @@ from database.db import db
 from flask_login import LoginManager
 from models.user_model import User
 from models.cart_model import CartItem  
-from routes.route import init_routes
+from routes import init_routes
 
 # Inicializa a aplicação Flask
 app = Flask(__name__)

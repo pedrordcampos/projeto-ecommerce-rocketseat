@@ -1,22 +1,29 @@
+# routes/main_routes.py
 from flask import request
 from flask_login import login_required
 from controllers.product_controller import ProductController
 from controllers.user_controller import UserController
 from controllers.login_controller import LoginController
+from controllers.cart_controller import CartController
+
 
 def init_routes(app):
-    """ LOGIN """
+
+    # LOGIN
+    
     @app.route('/login', methods=["POST"])
     def login():
         return LoginController.login()
     
-    """ LOGOUT """
     @app.route('/logout', methods=["POST"])
     @login_required 
     def logout():
         return LoginController.logout()
 
-    """ USERS """
+    
+    # USERS
+
+
     @app.route('/api/users', methods=["GET"])
     def list_users():
         return UserController.list_users()
@@ -42,7 +49,8 @@ def init_routes(app):
     def delete_user(user_id):
         return UserController.delete_user(user_id)
 
-    """ PRODUCTS """
+    # PRODUCTS
+
     @app.route('/api/products', methods=["GET"])
     def list_products():
         return ProductController.list_products()
@@ -67,3 +75,28 @@ def init_routes(app):
     @login_required 
     def delete_product(product_id):
         return ProductController.delete_product(product_id)
+
+
+    # CHECKOUT
+    @app.route('/api/cart/add/<int:product_id>', methods=["POST"])
+    @login_required
+    def add_to_cart(product_id):
+        return CartController.add_to_cart(product_id)
+    
+    @app.route('/api/cart', methods=["GET"])
+    @login_required
+    def view_cart():
+        return CartController.view_cart()
+  
+    @app.route('/api/cart/remove/<int:item_id>', methods=["DELETE"])
+    @login_required
+    def remove_cart_item(item_id):
+        return CartController.remove_cart_item(item_id)
+    
+    @app.route('/api/cart/checkout', methods=["POST"])
+    @login_required
+    def checkout():
+        return CartController.checkout()
+
+
+
