@@ -51,7 +51,7 @@ Este repositório contém o material e os exemplos do Mini Curso de Python ofere
    python app.py
 
 ### Dúvidas? Entre em contato
-#### Pedro Ricardo de Campos - Whatspp (15) 9952-3275
+#### Pedro Ricardo de Campos - Whatspp (15) 99752-3275
 #### E-mail: pedro.rdcampos@hotmail.com
 #### Linkedin: https://www.linkedin.com/in/pedro-ricardo-de-campos/
 
